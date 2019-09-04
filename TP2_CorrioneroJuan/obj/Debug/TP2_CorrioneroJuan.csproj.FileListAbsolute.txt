@@ -8,3 +8,4 @@ C:\Users\Juaniyeppi\source\repos\TP2_CorrioneroJuan\TP2_CorrioneroJuan\obj\Debug
 C:\Users\Juaniyeppi\source\repos\TP2_CorrioneroJuan\TP2_CorrioneroJuan\obj\Debug\TP2_CorrioneroJuan.csproj.CoreCompileInputs.cache
 C:\Users\Juaniyeppi\source\repos\TP2_CorrioneroJuan\TP2_CorrioneroJuan\obj\Debug\TP2_CorrioneroJuan.exe
 C:\Users\Juaniyeppi\source\repos\TP2_CorrioneroJuan\TP2_CorrioneroJuan\obj\Debug\TP2_CorrioneroJuan.pdb
+C:\Users\Juaniyeppi\source\repos\TP2_CorrioneroJuan\TP2_CorrioneroJuan\obj\Debug\TP2_CorrioneroJuan.frm_Agregar.resources

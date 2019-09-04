@@ -71,6 +71,7 @@
             this.tlSpButton_Buscar.Size = new System.Drawing.Size(23, 42);
             this.tlSpButton_Buscar.Text = "Buscar Productos";
             this.tlSpButton_Buscar.ToolTipText = "Buscar Producto";
+            this.tlSpButton_Buscar.Click += new System.EventHandler(this.tlSpButton_Buscar_Click);
             // 
             // tlSpButton_Agregar
             // 
@@ -82,6 +83,7 @@
             this.tlSpButton_Agregar.Size = new System.Drawing.Size(23, 42);
             this.tlSpButton_Agregar.Text = "Agregar Producto";
             this.tlSpButton_Agregar.ToolTipText = "Agregar Producto";
+            this.tlSpButton_Agregar.Click += new System.EventHandler(this.tlSpButton_Agregar_Click);
             // 
             // Form1
             // 
