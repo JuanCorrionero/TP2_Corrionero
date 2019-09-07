@@ -8,7 +8,7 @@ namespace TP2_CorrioneroJuan
 {
     class Marca
     {
-        int id;
-        char descripcion;
+        public int Id { get; set; }
+        public string Descripcion { get; set; }
     }
 }
