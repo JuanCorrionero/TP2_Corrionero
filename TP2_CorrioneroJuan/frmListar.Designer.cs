@@ -1,6 +1,6 @@
 ﻿namespace TP2_CorrioneroJuan
 {
-    partial class frm_Listar
+    partial class frmListar
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // frmListar
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "frm_Listar";
+            this.BackColor = System.Drawing.Color.Khaki;
+            this.ClientSize = new System.Drawing.Size(598, 335);
+            this.Name = "frmListar";
+            this.Text = "frmListar";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

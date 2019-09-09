@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Dominio;
 
-namespace TP2_CorrioneroJuan
+namespace Negocio
 {
-    class Categoria
+    public class MarcaNegocio
     {
-        int id;
-        char descripcion;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace TP2_CorrioneroJuan
 {
-    partial class frm_Buscar
+    partial class frmBuscar
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // frmBuscar
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Khaki;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "frm_Buscar";
+            this.Name = "frmBuscar";
+            this.Text = "frmBuscar";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

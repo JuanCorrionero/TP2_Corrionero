@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TP2_CorrioneroJuan
 {
-    public partial class frm_Listar : Form
+    public partial class frmBuscar : Form
     {
-        public frm_Listar()
+        public frmBuscar()
         {
             InitializeComponent();
         }
