@@ -10,13 +10,23 @@ namespace Negocio
 {
     public class ArticuloNegocio
     {
-        //public list<Articulo> Listar() { 
-        //List<Articulo> lista = new List<Articulo>();
-        //SqlConnection conexion = new SqlConnection();
-        //SqlCommand comando = new SqlCommand();
-        //SqlDataReader lector;
+        public List<Articulo> Listar()
+        {
+            List<Articulo> lista = new List<Articulo>();
+            SqlConnection conexion = new SqlConnection();
+            SqlCommand comando = new SqlCommand();
+            SqlDataReader lector;
 
-        //}
+            try
+            {
+                
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
     }
 
         
