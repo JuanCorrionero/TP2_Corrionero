@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 using Negocio;
 using Dominio;
 
@@ -28,20 +29,35 @@ namespace TP2_CorrioneroJuan
         {
             CategoriaNegocio negocio = new CategoriaNegocio();
             Categoria categoria = new Categoria();
+            bool Anduvo = true;
             try
             {
                 categoria.Descripcion = txtNombre.Text;
                 negocio.Agregar(categoria);
             }
+
+            catch (SqlException ex)
+            {
+                Anduvo = false;
+                SqlError err = ex.Errors[0];
+                if(err.Number == 2627)
+                {
+                    MessageBox.Show("Esta categoría ya existe! Ingrese otra diferente.");
+                }
+            }
+
             catch (Exception ex)
             {
-
+                Anduvo = false;
                 MessageBox.Show(ex.ToString());
             }
 
             finally
             {
-                MessageBox.Show("Categoria agregada correctamente!");
+                if (Anduvo == true)
+                {
+                    MessageBox.Show("Categoria agregada correctamente!");
+                }
                 Dispose();
             }
             
