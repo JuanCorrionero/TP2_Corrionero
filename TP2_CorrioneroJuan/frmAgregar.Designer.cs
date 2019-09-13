@@ -28,216 +28,106 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnAceptar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.txtPrecio = new System.Windows.Forms.TextBox();
-            this.cboBoxCategoria = new System.Windows.Forms.ComboBox();
-            this.cboBoxMarca = new System.Windows.Forms.ComboBox();
-            this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.lblDescripcion = new System.Windows.Forms.Label();
-            this.lblPrecio = new System.Windows.Forms.Label();
-            this.lblCategoria = new System.Windows.Forms.Label();
-            this.lblMarca = new System.Windows.Forms.Label();
-            this.lblImagen = new System.Windows.Forms.Label();
-            this.picBoxImagen = new System.Windows.Forms.PictureBox();
-            this.btnAdjuntar = new System.Windows.Forms.Button();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.txtPathImagen = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxImagen)).BeginInit();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAgregar));
+            this.btnAgregarArticulo = new System.Windows.Forms.Button();
+            this.btnAgregarMarca = new System.Windows.Forms.Button();
+            this.btnAgregarCategoria = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnAceptar
+            // btnAgregarArticulo
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(107, 338);
-            this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(75, 23);
-            this.btnAceptar.TabIndex = 0;
-            this.btnAceptar.Text = "Aceptar";
-            this.btnAceptar.UseVisualStyleBackColor = true;
-            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
+            this.btnAgregarArticulo.Location = new System.Drawing.Point(76, 190);
+            this.btnAgregarArticulo.Name = "btnAgregarArticulo";
+            this.btnAgregarArticulo.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregarArticulo.TabIndex = 0;
+            this.btnAgregarArticulo.Text = "Artículo";
+            this.btnAgregarArticulo.UseVisualStyleBackColor = true;
+            this.btnAgregarArticulo.Click += new System.EventHandler(this.btnAgregarArticulo_Click);
             // 
-            // btnCancelar
+            // btnAgregarMarca
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(296, 338);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelar.TabIndex = 1;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            this.btnAgregarMarca.Location = new System.Drawing.Point(230, 190);
+            this.btnAgregarMarca.Name = "btnAgregarMarca";
+            this.btnAgregarMarca.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregarMarca.TabIndex = 1;
+            this.btnAgregarMarca.Text = "Marca";
+            this.btnAgregarMarca.UseVisualStyleBackColor = true;
+            this.btnAgregarMarca.Click += new System.EventHandler(this.btnAgregarMarca_Click);
             // 
-            // txtPrecio
+            // btnAgregarCategoria
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(198, 116);
-            this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(121, 20);
-            this.txtPrecio.TabIndex = 2;
+            this.btnAgregarCategoria.Location = new System.Drawing.Point(375, 190);
+            this.btnAgregarCategoria.Name = "btnAgregarCategoria";
+            this.btnAgregarCategoria.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregarCategoria.TabIndex = 2;
+            this.btnAgregarCategoria.Text = "Categoría";
+            this.btnAgregarCategoria.UseVisualStyleBackColor = true;
+            this.btnAgregarCategoria.Click += new System.EventHandler(this.btnAgregarCategoria_Click);
             // 
-            // cboBoxCategoria
+            // pictureBox1
             // 
-            this.cboBoxCategoria.FormattingEnabled = true;
-            this.cboBoxCategoria.Location = new System.Drawing.Point(198, 143);
-            this.cboBoxCategoria.Name = "cboBoxCategoria";
-            this.cboBoxCategoria.Size = new System.Drawing.Size(121, 21);
-            this.cboBoxCategoria.TabIndex = 3;
+            this.pictureBox1.Image = global::TP2_CorrioneroJuan.Properties.Resources.Agregar;
+            this.pictureBox1.Location = new System.Drawing.Point(64, 109);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
-            // cboBoxMarca
+            // pictureBox2
             // 
-            this.cboBoxMarca.FormattingEnabled = true;
-            this.cboBoxMarca.Location = new System.Drawing.Point(198, 170);
-            this.cboBoxMarca.Name = "cboBoxMarca";
-            this.cboBoxMarca.Size = new System.Drawing.Size(121, 21);
-            this.cboBoxMarca.TabIndex = 4;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(214, 109);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
             // 
-            // txtDescripcion
+            // pictureBox3
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(198, 90);
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(121, 20);
-            this.txtDescripcion.TabIndex = 5;
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(198, 64);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(121, 20);
-            this.txtNombre.TabIndex = 6;
-            // 
-            // lblNombre
-            // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(125, 67);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(47, 13);
-            this.lblNombre.TabIndex = 7;
-            this.lblNombre.Text = "Nombre:";
-            // 
-            // lblDescripcion
-            // 
-            this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Location = new System.Drawing.Point(125, 93);
-            this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(66, 13);
-            this.lblDescripcion.TabIndex = 9;
-            this.lblDescripcion.Text = "Descripcion:";
-            // 
-            // lblPrecio
-            // 
-            this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Location = new System.Drawing.Point(125, 119);
-            this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(40, 13);
-            this.lblPrecio.TabIndex = 11;
-            this.lblPrecio.Text = "Precio:";
-            // 
-            // lblCategoria
-            // 
-            this.lblCategoria.AutoSize = true;
-            this.lblCategoria.Location = new System.Drawing.Point(125, 146);
-            this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(57, 13);
-            this.lblCategoria.TabIndex = 13;
-            this.lblCategoria.Text = "Categoría:";
-            // 
-            // lblMarca
-            // 
-            this.lblMarca.AutoSize = true;
-            this.lblMarca.Location = new System.Drawing.Point(125, 173);
-            this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(40, 13);
-            this.lblMarca.TabIndex = 15;
-            this.lblMarca.Text = "Marca:";
-            // 
-            // lblImagen
-            // 
-            this.lblImagen.AutoSize = true;
-            this.lblImagen.Location = new System.Drawing.Point(137, 235);
-            this.lblImagen.Name = "lblImagen";
-            this.lblImagen.Size = new System.Drawing.Size(45, 13);
-            this.lblImagen.TabIndex = 17;
-            this.lblImagen.Text = "Imagen:";
-            // 
-            // picBoxImagen
-            // 
-            this.picBoxImagen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picBoxImagen.Location = new System.Drawing.Point(198, 206);
-            this.picBoxImagen.Name = "picBoxImagen";
-            this.picBoxImagen.Size = new System.Drawing.Size(131, 67);
-            this.picBoxImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBoxImagen.TabIndex = 18;
-            this.picBoxImagen.TabStop = false;
-            // 
-            // btnAdjuntar
-            // 
-            this.btnAdjuntar.Location = new System.Drawing.Point(228, 300);
-            this.btnAdjuntar.Name = "btnAdjuntar";
-            this.btnAdjuntar.Size = new System.Drawing.Size(75, 23);
-            this.btnAdjuntar.TabIndex = 19;
-            this.btnAdjuntar.Text = "Adjuntar";
-            this.btnAdjuntar.UseVisualStyleBackColor = true;
-            this.btnAdjuntar.Click += new System.EventHandler(this.btnAdjuntar_Click);
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // txtPathImagen
-            // 
-            this.txtPathImagen.Location = new System.Drawing.Point(107, 279);
-            this.txtPathImagen.Name = "txtPathImagen";
-            this.txtPathImagen.Size = new System.Drawing.Size(302, 20);
-            this.txtPathImagen.TabIndex = 20;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(361, 109);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 5;
+            this.pictureBox3.TabStop = false;
             // 
             // frmAgregar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Khaki;
-            this.ClientSize = new System.Drawing.Size(532, 396);
-            this.Controls.Add(this.txtPathImagen);
-            this.Controls.Add(this.btnAdjuntar);
-            this.Controls.Add(this.picBoxImagen);
-            this.Controls.Add(this.lblImagen);
-            this.Controls.Add(this.lblMarca);
-            this.Controls.Add(this.lblCategoria);
-            this.Controls.Add(this.lblPrecio);
-            this.Controls.Add(this.lblDescripcion);
-            this.Controls.Add(this.lblNombre);
-            this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.txtDescripcion);
-            this.Controls.Add(this.cboBoxMarca);
-            this.Controls.Add(this.cboBoxCategoria);
-            this.Controls.Add(this.txtPrecio);
-            this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.btnAceptar);
+            this.ClientSize = new System.Drawing.Size(532, 317);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btnAgregarCategoria);
+            this.Controls.Add(this.btnAgregarMarca);
+            this.Controls.Add(this.btnAgregarArticulo);
             this.Name = "frmAgregar";
-            this.Text = "frmAgregar";
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxImagen)).EndInit();
+            this.Text = "Agregar";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnAceptar;
-        private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.TextBox txtPrecio;
-        private System.Windows.Forms.ComboBox cboBoxCategoria;
-        private System.Windows.Forms.ComboBox cboBoxMarca;
-        private System.Windows.Forms.TextBox txtDescripcion;
-        private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.Label lblDescripcion;
-        private System.Windows.Forms.Label lblPrecio;
-        private System.Windows.Forms.Label lblCategoria;
-        private System.Windows.Forms.Label lblMarca;
-        private System.Windows.Forms.Label lblImagen;
-        private System.Windows.Forms.PictureBox picBoxImagen;
-        private System.Windows.Forms.Button btnAdjuntar;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.TextBox txtPathImagen;
+        private System.Windows.Forms.Button btnAgregarArticulo;
+        private System.Windows.Forms.Button btnAgregarMarca;
+        private System.Windows.Forms.Button btnAgregarCategoria;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

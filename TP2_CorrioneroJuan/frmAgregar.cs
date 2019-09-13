@@ -7,8 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Dominio;
-using Negocio;
 
 namespace TP2_CorrioneroJuan
 {
@@ -19,62 +17,22 @@ namespace TP2_CorrioneroJuan
             InitializeComponent();
         }
 
-        private void btnAdjuntar_Click(object sender, EventArgs e)
+        private void btnAgregarArticulo_Click(object sender, EventArgs e)
         {
-            try
-            {
-                OpenFileDialog adjuntar = new OpenFileDialog();
-                adjuntar.InitialDirectory = "c:\\";
-                adjuntar.Filter = "Image files (*.jpg, *.jpeg, *.png) | *.jpg; *.jpeg; *.png";
-                if (adjuntar.ShowDialog() == DialogResult.OK)
-                {
-                    txtPathImagen.Text = adjuntar.FileName;
-                    picBoxImagen.ImageLocation = adjuntar.FileName;
-                }
-                else
-                {
-                    MessageBox.Show("No se seleccionó imagen.");
-                }
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.Message);
-            }
+            frmAgregarArticulo AgregarArticulo = new frmAgregarArticulo();
+            AgregarArticulo.ShowDialog();
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
+        private void btnAgregarMarca_Click(object sender, EventArgs e)
         {
-            Dispose();
+            frmAgregarMarca AgregarMarca = new frmAgregarMarca();
+            AgregarMarca.ShowDialog();
         }
 
-        private void btnAceptar_Click(object sender, EventArgs e)
+        private void btnAgregarCategoria_Click(object sender, EventArgs e)
         {
-            Articulo articulo = new Articulo();
-            ArticuloNegocio negocio = new ArticuloNegocio();
-            try
-            {
-                articulo.Nombre = txtNombre.Text;
-                articulo.Descripcion = txtDescripcion.Text;
-                articulo.Precio = Convert.ToDecimal(txtPrecio.Text);
-                // articulo.Imagen = picBoxImagen.ImageLocation;
-
-                negocio.agregar(articulo);
-                MessageBox.Show("Artículo agregado con éxito!");
-
-                Dispose();
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.ToString());
-            }
-
-            finally
-            {
-                Dispose();
-            }
-            
+            frmAgregarCategoria AgregarCategoria = new frmAgregarCategoria();
+            AgregarCategoria.ShowDialog();
         }
     }
 }

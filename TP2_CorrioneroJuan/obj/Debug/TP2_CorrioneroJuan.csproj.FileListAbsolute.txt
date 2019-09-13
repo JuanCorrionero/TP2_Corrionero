@@ -16,3 +16,6 @@ C:\Users\Juaniyeppi\source\repos\TP2_CorrioneroJuan\TP2_CorrioneroJuan\bin\Debug
 C:\Users\Juaniyeppi\source\repos\TP2_CorrioneroJuan\TP2_CorrioneroJuan\bin\Debug\Dominio.pdb
 C:\Users\Juaniyeppi\source\repos\TP2_CorrioneroJuan\TP2_CorrioneroJuan\bin\Debug\Negocio.pdb
 C:\Users\Juaniyeppi\source\repos\TP2_CorrioneroJuan\TP2_CorrioneroJuan\obj\Debug\TP2_CorrioneroJuan.csproj.CopyComplete
+C:\Users\Juaniyeppi\source\repos\TP2_CorrioneroJuan\TP2_CorrioneroJuan\obj\Debug\TP2_CorrioneroJuan.frmAgregarCategoria.resources
+C:\Users\Juaniyeppi\source\repos\TP2_CorrioneroJuan\TP2_CorrioneroJuan\obj\Debug\TP2_CorrioneroJuan.frmAgregarMarca.resources
+C:\Users\Juaniyeppi\source\repos\TP2_CorrioneroJuan\TP2_CorrioneroJuan\obj\Debug\TP2_CorrioneroJuan.frmAgregarArticulo.resources
