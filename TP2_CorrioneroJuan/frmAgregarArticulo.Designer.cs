@@ -214,6 +214,7 @@
             this.Controls.Add(this.btnAceptar);
             this.Name = "frmAgregarArticulo";
             this.Text = "Agregar Artículo";
+            this.Load += new System.EventHandler(this.frmAgregarArticulo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBoxImagen)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

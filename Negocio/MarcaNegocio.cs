@@ -39,6 +39,11 @@ namespace Negocio
 
                 throw ex;
             }
+
+            finally
+            {
+                conexion.Close();
+            }
         }
 
         public void Agregar(Marca marca)

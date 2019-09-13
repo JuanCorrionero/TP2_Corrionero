@@ -19,6 +19,22 @@ namespace TP2_CorrioneroJuan
             InitializeComponent();
         }
 
+        private void frmAgregarArticulo_Load(object sender, EventArgs e)
+        {
+            MarcaNegocio marcaNegocio = new MarcaNegocio();
+            CategoriaNegocio categoriaNegocio = new CategoriaNegocio();
+            try
+            {
+            cboBoxCategoria.DataSource = categoriaNegocio.listar();
+            cboBoxMarca.DataSource = marcaNegocio.listar();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
         private void btnAdjuntar_Click(object sender, EventArgs e)
         {
             try
@@ -52,29 +68,38 @@ namespace TP2_CorrioneroJuan
         {
             Articulo articulo = new Articulo();
             ArticuloNegocio negocio = new ArticuloNegocio();
+            bool Anduvo = true;
             try
             {
                 articulo.Nombre = txtNombre.Text;
                 articulo.Descripcion = txtDescripcion.Text;
                 articulo.Precio = Convert.ToDecimal(txtPrecio.Text);
-                // articulo.Imagen = picBoxImagen.ImageLocation;
+                articulo.Imagen = picBoxImagen.ImageLocation;
+                articulo.Categoria = (Categoria)cboBoxCategoria.SelectedItem;
+                articulo.Marca = (Marca)cboBoxMarca.SelectedItem;
+
 
                 negocio.agregar(articulo);
-                MessageBox.Show("Artículo agregado con éxito!");
+                
 
                 Dispose();
             }
             catch (Exception ex)
             {
-
+                Anduvo = false;
                 MessageBox.Show(ex.ToString());
             }
 
             finally
             {
+                if (Anduvo == true)
+                {
+                MessageBox.Show("Artículo agregado con éxito!");
+                }
                 Dispose();
             }
             
         }
+
     }
 }
