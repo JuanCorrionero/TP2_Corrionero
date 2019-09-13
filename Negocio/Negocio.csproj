@@ -54,10 +54,6 @@
       <Project>{803df2ff-b659-485f-aa0a-6d41192ef291}</Project>
       <Name>Dominio</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TP2_CorrioneroJuan\TP2_CorrioneroJuan.csproj">
-      <Project>{30dba0ef-e9b1-4cd6-8d30-4a3986a589cc}</Project>
-      <Name>TP2_CorrioneroJuan</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

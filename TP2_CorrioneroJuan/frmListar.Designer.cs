@@ -38,6 +38,7 @@
             this.ClientSize = new System.Drawing.Size(598, 335);
             this.Name = "frmListar";
             this.Text = "frmListar";
+            this.Load += new System.EventHandler(this.frmListar_Load);
             this.ResumeLayout(false);
 
         }

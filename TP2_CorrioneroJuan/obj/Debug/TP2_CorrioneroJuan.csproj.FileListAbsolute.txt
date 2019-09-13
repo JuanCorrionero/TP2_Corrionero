@@ -11,3 +11,8 @@ C:\Users\Juaniyeppi\source\repos\TP2_CorrioneroJuan\TP2_CorrioneroJuan\obj\Debug
 C:\Users\Juaniyeppi\source\repos\TP2_CorrioneroJuan\TP2_CorrioneroJuan\obj\Debug\TP2_CorrioneroJuan.frmAgregar.resources
 C:\Users\Juaniyeppi\source\repos\TP2_CorrioneroJuan\TP2_CorrioneroJuan\obj\Debug\TP2_CorrioneroJuan.frmBuscar.resources
 C:\Users\Juaniyeppi\source\repos\TP2_CorrioneroJuan\TP2_CorrioneroJuan\obj\Debug\TP2_CorrioneroJuan.frmListar.resources
+C:\Users\Juaniyeppi\source\repos\TP2_CorrioneroJuan\TP2_CorrioneroJuan\bin\Debug\Dominio.dll
+C:\Users\Juaniyeppi\source\repos\TP2_CorrioneroJuan\TP2_CorrioneroJuan\bin\Debug\Negocio.dll
+C:\Users\Juaniyeppi\source\repos\TP2_CorrioneroJuan\TP2_CorrioneroJuan\bin\Debug\Dominio.pdb
+C:\Users\Juaniyeppi\source\repos\TP2_CorrioneroJuan\TP2_CorrioneroJuan\bin\Debug\Negocio.pdb
+C:\Users\Juaniyeppi\source\repos\TP2_CorrioneroJuan\TP2_CorrioneroJuan\obj\Debug\TP2_CorrioneroJuan.csproj.CopyComplete
