@@ -35,9 +35,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Khaki;
-            this.ClientSize = new System.Drawing.Size(598, 335);
+            this.ClientSize = new System.Drawing.Size(759, 319);
             this.Name = "frmListar";
-            this.Text = "frmListar";
+            this.Text = "Listar";
             this.Load += new System.EventHandler(this.frmListar_Load);
             this.ResumeLayout(false);
 

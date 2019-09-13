@@ -62,12 +62,14 @@ namespace Negocio
                 conexion.ConnectionString = "data source=DESKTOP-IRCN5AN\\SQLEXPRESS; initial catalog=TP2_DbCorrionero; integrated security=sspi";
                 comando.CommandType = System.Data.CommandType.Text;
                 comando.Connection = conexion;
-                comando.CommandText = "Insert into Articulos values ('" + articulo.Nombre + "', '" + articulo.Descripcion + "','" + articulo.Precio + "')";
-                //comando.Parameters.Clear();
-                //comando.Parameters.AddWithValue("@Nombre", articulo.Nombre);
-                //comando.Parameters.AddWithValue("@Descripcion", articulo.Descripcion);
-                //comando.Parameters.AddWithValue("@Precio", articulo.Precio);
-                //comando.Parameters.AddWithValue("@Imagen", articulo.Imagen);
+                comando.CommandText = "Insert into Articulos values (@Nombre, @Descripcion, @IdMarca, @IdCategoria, @Precio, @Imagen)";
+                comando.Parameters.Clear();
+                comando.Parameters.AddWithValue("@Nombre", articulo.Nombre);
+                comando.Parameters.AddWithValue("@Descripcion", articulo.Descripcion);
+                comando.Parameters.AddWithValue("@IdCategoria", articulo.Categoria.Id);
+                comando.Parameters.AddWithValue("IdMarca", articulo.Marca.Id);
+                comando.Parameters.AddWithValue("@Precio", articulo.Precio);
+                comando.Parameters.AddWithValue("@Imagen", articulo.Imagen);
 
                 comando.Connection = conexion;
                 conexion.Open();

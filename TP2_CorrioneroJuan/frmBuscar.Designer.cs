@@ -37,7 +37,7 @@
             this.BackColor = System.Drawing.Color.Khaki;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "frmBuscar";
-            this.Text = "frmBuscar";
+            this.Text = "Buscar";
             this.ResumeLayout(false);
 
         }

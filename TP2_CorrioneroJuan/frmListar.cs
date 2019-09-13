@@ -40,10 +40,7 @@ namespace TP2_CorrioneroJuan
 
                 MessageBox.Show(ex.Message);
             }
-            finally
-            {
 
-            }
         }
 
     }
