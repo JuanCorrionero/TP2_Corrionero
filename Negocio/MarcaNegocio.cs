@@ -21,7 +21,7 @@ namespace Negocio
             {
                 conexion.ConnectionString = "data source=DESKTOP-IRCN5AN\\SQLEXPRESS; initial catalog=TP2_DbCorrionero; integrated security=sspi";
                 comando.CommandType = System.Data.CommandType.Text;
-                comando.CommandText = "SELECT M.descripcion from Marca as M";
+                comando.CommandText = "SELECT id, descripcion from Marca ";
                 comando.Connection = conexion;
                 conexion.Open();
                 lector = comando.ExecuteReader();
@@ -29,6 +29,7 @@ namespace Negocio
                 {
                     aux = new Marca();
                     aux.Descripcion = lector["descripcion"].ToString();
+                    aux.Id = lector.GetInt32(0);
                     lista.Add(aux);
                 }
 

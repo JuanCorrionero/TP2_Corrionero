@@ -21,7 +21,7 @@ namespace Negocio
             {
                 conexion.ConnectionString = "data source=DESKTOP-IRCN5AN\\SQLEXPRESS; initial catalog=TP2_DbCorrionero; integrated security=sspi";
                 comando.CommandType = System.Data.CommandType.Text;
-                comando.CommandText = "Select A.nombre, A.descripcion, A.precio from Articulos as A";
+                comando.CommandText = "Select A.nombre, A.descripcion, A.precio, A.id from Articulos as A";
                 comando.Connection = conexion;
                 conexion.Open();
                 lector = comando.ExecuteReader();
